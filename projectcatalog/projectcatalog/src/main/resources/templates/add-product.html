@@ -1,0 +1,12 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org"><head>
+<meta charset="UTF-8"><title>Add Product</title>
+<link rel="stylesheet" href="/styles.css"></head><body>
+  <h2>Add Product</h2>
+  <form action="/add" method="post" class="card">
+    <label>Product name: <input type="text" name="name" required></label>
+    <label>Price: <input type="number" name="price" step="0.01" required></label>
+    <label>Category: <input type="text" name="category" required></label>
+    <button type="submit" class="btn">add</button>
+  </form>
+  <p><a href="/">← Back</a></p>
+</body></html>

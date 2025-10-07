@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="fragments/layout :: layout(~{::content})">
+<div th:fragment="content">
+    <h2>Bookings</h2>
+    <table>
+        <tr>
+            <th>Hotel ID</th>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>Status</th>
+            <th>Payment</th>
+        </tr>
+        <tr th:each="booking : ${bookings}">
+            <td th:text="${booking.hotelId}"></td>
+            <td th:text="${booking.checkInDate}"></td>
+            <td th:text="${booking.checkOutDate}"></td>
+            <td th:text="${booking.status}"></td>
+            <td th:text="${booking.paymentStatus}"></td>
+        </tr>
+    </table>
+</div>
+</html>

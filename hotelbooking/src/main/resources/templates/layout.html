@@ -1,0 +1,24 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title th:utext="${title} ?: 'Hotel Booking'">Hotel Booking</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+  <img th:src="@{/images/hotel1.png}" alt="Hotel Image" width="400">
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand">Hotel Booking System</a>
+    </div>
+  </header>
+
+  <main class="container" th:replace="${content}"> <!-- pages will inject content -->
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 My Hotel App</p>
+  </footer>
+</body>
+</html>

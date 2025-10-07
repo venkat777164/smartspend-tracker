@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 40px;
+    }
+    table {
+      background-color: #fff;
+      padding: 20px;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    td {
+      padding: 10px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <table>
+      <tr>
+        <td><label for="fname">First Name:</label></td>
+        <td><input type="text" id="fname" name="fname" required></td>
+      </tr>
+      <tr>
+        <td><label for="lname">Last Name:</label></td>
+        <td><input type="text" id="lname" name="lname" required></td>
+      </tr>
+      <tr>
+        <td><label for="ccnum">Credit Card Number:</label></td>
+        <td><input type="text" id="ccnum" name="ccnum" required></td>
+      </tr>
+      <tr>
+        <td><label for="expmonth">Expiration Date:</label></td>
+        <td>
+          <select id="expmonth" name="expmonth" required>
+            <option value="">Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <select id="expyear" name="expyear" required>
+            <option value="">Year</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Card Type:</label></td>
+        <td class="radio-group">
+          <label><input type="radio" name="cardType" value="Visa" required> Visa</label>
+          <label><input type="radio" name="cardType" value="MasterCard"> MasterCard</label>
+          <label><input type="radio" name="cardType" value="Discover"> Discover</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

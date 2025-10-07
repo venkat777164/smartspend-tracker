@@ -1,0 +1,21 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Hotels</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+  <img th:src="@{/images/hotel3.jpg}" alt="Hotel Image" width="400">
+  <div class="container page-content">
+    <h1>Hotels</h1>
+    <div class="hotel-list">
+      <div class="hotel-card" th:each="hotel : ${hotels}">
+        <h3 th:text="${hotel.name}">Hotel</h3>
+        <p th:text="${hotel.city}"></p>
+        <p th:text="${hotel.description}"></p>
+        <a th:href="@{|/hotels/${hotel.id}|}">Details →</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form with Default Values</title>
+</head>
+<body>
+  <h2>Form with Default Values</h2>
+
+  <form>
+
+    <!-- Text Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="John Doe"><br><br>
+
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="john@example.com"><br><br>
+
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="123456"><br><br>
+
+    <!-- Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" value="30"><br><br>
+
+    <!-- Date Input -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" value="2000-01-01"><br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="reading" name="hobby" value="Reading" checked>
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="travel" name="hobby" value="Travel">
+    <label for="travel">Travel</label><br><br>
+
+    <!-- Select Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="USA" selected>USA</option>
+      <option value="UK">UK</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30">Hello, this is a default message.</textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
+

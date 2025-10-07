@@ -1,0 +1,19 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: layout(~{::body})">
+  <head>
+    <title>Home - Hotels</title>
+  </head>
+  <body>
+    <img th:src="@{/images/hotel2.jpg}" alt="Hotel Image" width="400">
+    <div class="page-content">
+      <h1>Featured Hotels</h1>
+      <div class="hotel-list">
+        <div class="hotel-card" th:each="hotel : ${hotels}">
+          <h3 th:text="${hotel.name}">Hotel name</h3>
+          <p th:text="${hotel.city} + ' — ' + ${hotel.rating} + ' ★'">City</p>
+          <p><a th:href="@{|/hotels/${hotel.id}|}">View details</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

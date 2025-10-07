@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Input Elements</title>
+</head>
+<body>
+
+  <h1>Form with All HTML Input Elements</h1>
+
+  <form>
+
+    <!-- Text Input -->
+    <label for="text">Text:</label>
+    <input type="text" id="text" name="text" value="Hello"><br><br>
+
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="123456"><br><br>
+
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="user@example.com"><br><br>
+
+    <!-- Number Input -->
+    <label for="number">Number:</label>
+    <input type="number" id="number" name="number" value="5"><br><br>
+
+    <!-- Date Input -->
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" value="2025-07-08"><br><br>
+
+    <!-- Time Input -->
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" value="12:00"><br><br>
+
+    <!-- Color Input -->
+    <label for="color">Color:</label>
+    <input type="color" id="color" name="color" value="#ff0000"><br><br>
+
+    <!-- Range Input -->
+    <label for="range">Range:</label>
+    <input type="range" id="range" name="range" min="0" max="100" value="50"><br><br>
+
+    <!-- Checkbox Input -->
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="reading" name="hobby" value="Reading" checked>
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="traveling" name="hobby" value="Traveling">
+    <label for="traveling">Traveling</label><br><br>
+
+    <!-- Radio Input -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" checked>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Telephone Input -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" value="9876543210"><br><br>
+
+    <!-- URL Input -->
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website" value="https://example.com"><br><br>
+
+    <!-- File Input -->
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <!-- Hidden Input -->
+    <input type="hidden" name="userID" value="12345">
+
+    <!-- Search Input -->
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" value="HTML"><br><br>
+
+    <!-- Month Input -->
+    <label for="month">Month:</label>
+    <input type="month" id="month" name="month" value="2025-07"><br><br>
+
+    <!-- Week Input -->
+    <label for="week">Week:</label>
+    <input type="week" id="week" name="week" value="2025-W28"><br><br>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40">Default message...</textarea><br><br>
+
+    <!-- Select / Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="USA" selected>USA</option>
+      <option value="UK">UK</option>
+    </select><br><br>
+
+    <!-- Submit & Reset Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
